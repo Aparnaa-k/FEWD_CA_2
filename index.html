@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEWD_CA_2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="assets/Screenshot (49) 1.png" class="logo" alt="Logo"/>
+        <ul>
+            <ol>
+                <a href="#">Home</a>
+                <a href="#" id="recipesLink">Recipes</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </ol>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search your dish..." id="searchInput"/>
+            <img src="assets/icons8-search-64.png" alt="Search icon" class="search" id="searchIcon"/>
+        </div>
+    </nav>
+    <div>
+        <header >Choose your craving!</header>
+        <div class="display-category">
+            <h1 id="category"></h1>
+            <div id="display-box">
+            </div>
+        </div>
+    </div>
+    <div id="popup-id" class="modal">
+        <div class="modal-box">
+            <h2 id="meal-Name"></h2>
+
+            <div class="popup-container">
+                <span onclick="closePopup()" class="cancel display">&times;</span>
+                <div id="image">
+                    <img src="" alt="Meal Image" id="popup-img" class="popup-image">
+                    <h2 id="head"></h2>
+                    <h4 id="popup-Ingredient" class="popup-Ingredient"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
